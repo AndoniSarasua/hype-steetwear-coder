@@ -4,7 +4,8 @@
 }
 
 a{
-    color: black;
+    color: black !important; 
+    text-decoration: none !important; 
 }
 
 /*GENERAL*/
@@ -41,19 +42,17 @@ h2 {
 /*ANIMACIONES*/
 .producto:hover {
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .navegador:hover{
     transform: scale(1.1);
+    transition: 0.5s;
 }
 
 /*MEDIA QUERIES*/
 @media screen and (min-width: 1109px){
-    .grid-index{
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
-    }
+    
 
     .productos-destacados{
         padding-bottom: 20px;
@@ -75,7 +74,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 1109px){
+@media screen and (max-width: 1200px){
     .ingresos-title{
         width: 100%;
     }
@@ -294,5 +293,5 @@ footer div{
 }
 
 .link-redes{
-    color: rgb(129, 32, 255);
+    color: rgb(129, 32, 255) !important;
 }
