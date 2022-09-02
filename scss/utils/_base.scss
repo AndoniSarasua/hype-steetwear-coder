@@ -1,0 +1,37 @@
+/*VARIABLES*/
+$border-radius-shadow:38px 38px 38px 38px;
+$box-shadow-1: 0px 0px 25px 2px rgba(0,0,0,0.1);   
+$color-primario: rgb(95, 23, 161);
+
+
+/*MIXIN*/
+@mixin display-jc-ai($display,$jc,$ai) {
+    display: $display;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin animacion-hover-1 {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*ALL*/
+* {
+    text-decoration: none;
+}
+
+a{
+    color: black !important; 
+    text-decoration: none !important; 
+}
+
+.link-redes{
+    color: $color-primario !important;
+}
+
+/*MAP*/
+$espacios:(
+    pad-b: 20px,
+    gap: 8px
+    ) 
