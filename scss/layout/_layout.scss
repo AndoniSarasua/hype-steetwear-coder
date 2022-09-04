@@ -45,29 +45,27 @@ h2 {
         gap:map-get($espacios, gap );
     }
 
-    .ingresos-title{
-        width: 90%;
-    }
-
     aside {
         padding-bottom: map-get($espacios, pad-b );
         gap:map-get($espacios, gap );
         @include display-jc-ai(flex,flex-start,center);
         flex-direction: column;
         flex-wrap: wrap;
+        .ingresos-title{
+            width: 90%;
+        }
     }
 }
 
 @media screen and (max-width: 1200px){
-    .ingresos-title{
-        width: 100%;
-    }
-    
     aside{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+        .ingresos-title{
+            width: 100%;
+        }
     }
 }
 
@@ -114,13 +112,12 @@ header {
 }
 
 /*INDEX*/
-.productos-title {
-    width: 100%; 
-}
-
 .productos-destacados {
     @include display-jc-ai(flex,space-around,center);
     flex-wrap: wrap;
+    .productos-title {
+        width: 100%; 
+    }
 }
 
 aside{

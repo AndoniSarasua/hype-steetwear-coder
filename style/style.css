@@ -79,9 +79,6 @@ h2 {
     padding-bottom: 20px;
     gap: 8px;
   }
-  .ingresos-title {
-    width: 90%;
-  }
   aside {
     padding-bottom: 20px;
     gap: 8px;
@@ -91,16 +88,19 @@ h2 {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  aside .ingresos-title {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 1200px) {
-  .ingresos-title {
-    width: 100%;
-  }
   aside {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+  aside .ingresos-title {
+    width: 100%;
   }
 }
 /*HEADER*/
@@ -146,15 +146,14 @@ header div .nav ul li .link-nav {
 }
 
 /*INDEX*/
-.productos-title {
-  width: 100%;
-}
-
 .productos-destacados {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+.productos-destacados .productos-title {
+  width: 100%;
 }
 
 aside {
@@ -189,7 +188,7 @@ aside {
 }
 
 /*CALZADO*/
-.calzado {
+.calzado, .accesorios, .indumentaria {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -199,25 +198,7 @@ aside {
 }
 
 /*INDUMENTARIA*/
-.indumentaria {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 20px;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
 /*ACCESORIOS*/
-.accesorios {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 20px;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
 /*FOOTER*/
 footer {
   background-color: black;
