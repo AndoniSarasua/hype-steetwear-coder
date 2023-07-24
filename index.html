@@ -18,7 +18,11 @@
 <div class="container-fluid">
 
 <header class="column">
-    <div class="row"><input type="text" class="buscador"></div>
+    <div class="carrito">
+        <h2>Carrito</h2>
+        <ul id="elementosCarrito"></ul>
+        <div>Total: <span id="totalCarrito"></span> USD</div>
+    </div>
     <div class="row"><h1 class="h1">Hype Streetwear</h1></div>
     <div class="row"><nav class="nav">
         <ul>
@@ -57,6 +61,7 @@
             <img src="images/streethawker.webp" alt="Dunk Low Street Hawker" height="200" width="100%" class="producto__imagen">
             <div class="producto__precio"><p>420 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Dunk Low Street Hawker', 420)">Agregar al carrito</button>
         </div>
         <div id="1" class="producto">
         <a href="" class="link-producto">
@@ -64,6 +69,7 @@
             <img src="images/tnf1996red.webp" alt="The North Face 1996 Red" height="200" width="100%" class="producto__imagen">
             <div class="producto__precio"><p>140 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('The North Face 1996 Red', 140)">Agregar al carrito</button>
         </div>
         <div id="2" class="producto">
         <a href="" class="link-producto">
@@ -71,6 +77,7 @@
             <img src="images/supremefattipblue.webp" alt="Supreme Fat Tip Blue" height="200" width="100%" class="producto__imagen"> 
             <div class="producto__precio"><p>150 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Supreme Fat Tip', 150)">Agregar al carrito</button>
         </div>
         <div id="3" class="producto">
         <a href="" class="link-producto">
@@ -78,6 +85,7 @@
             <img src="images/jordan1highmocha.webp" alt="Jordan 1 High Mocha" height="200" width="100%" class="producto__imagen">
             <div class="producto__precio"><p>450 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Jordan 1 High Mocha', 450)">Agregar al carrito</button>
         </div>
         <div id="4" class="producto">
         <a href="" class="link-producto">
@@ -85,6 +93,7 @@
             <img src="images/dunklowpanda.webp" alt="Dunk Low Panda" height="200" width="100%" class="producto__imagen" >
             <div class="producto__precio"><p>210 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Dunk Low Panda', 210)">Agregar al carrito</button>
         </div>
         <div id="5" class="producto">
         <a href="" class="link-producto">
@@ -92,6 +101,7 @@
             <img src="images/jordan4military.webp" alt="Jordan 4 Retro Military" height="200" width="100%" class="producto__imagen">
             <div class="producto__precio"><p>290 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Jordan 4 Military', 290)">Agregar al carrito</button>
         </div>
     </div>
     </section>
@@ -105,6 +115,7 @@
             <img src="images/jordan4sail.webp" alt="Jordan 4 Off White Sail" height="200" width="100%" class="producto__imagen">
             <div class="producto__precio"><p>1200 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Jordan 4 OW Sail', 1200)">Agregar al carrito</button>
         </div>
         <div class="producto">
         <a href="" class="link-producto">
@@ -112,6 +123,7 @@
             <img src="images/jordan1lowtravisreverse.webp" alt="Jordan 1 Low Travis Scott Reverse Mocha" height="200" width="100%" class="producto__imagen">
             <div class="producto__precio"><p>1175 usd</p></div>
         </a>
+        <button onclick="agregarAlCarrito('Jordan 1 Low Travis Reverse Mocha', 1175)">Agregar al carrito</button>
         </div>
     </aside>
     </div>
@@ -150,8 +162,8 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="carrito.js"></script>
 <script src="javascript.js"></script>
 </body>
 
 </html>
-
